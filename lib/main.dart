@@ -158,129 +158,128 @@ class _HomePageState extends State<HomePage> {
           ),
           child: Align(
             alignment: Alignment.bottomLeft,
-            child: Text(title, style: TextStyle(color: Colors.white, fontSize: 20),),
+            child: Text(
+              title, style: TextStyle(color: Colors.white, fontSize: 20),),
           ),
         ),
       ),
     );
+   }
 
+}
 
-    /*class CountryListTile extends StatelessWidget {
-  final String label;
-  final String countryName;
-  final int noOfTours;
+class CountryListTile extends StatelessWidget {
+  final String title;
+  final String date;
+  final int time;
   final double rating;
   final String imgUrl;
   CountryListTile(
-  {@required this.title,
-  @required this.date,
-  @required this.time,
-  @required this.rating,
-  @required this.imgUrl});
+      { @required this.title,
+        @required this.date,
+        @required this.time,
+        @required this.rating,
+        @required this.imgUrl});
 
   @override
   Widget build(BuildContext context) {
-  return Container(
-  margin: EdgeInsets.only(right: 8),
-  child: Stack(
-  children: [
-  ClipRRect(
-  borderRadius: BorderRadius.circular(16),
-  child: Container(
-  child: CachedNetworkImage(
-  image: imgUrl,
-  height: 220,
-  width: 150,
-  fit: BoxFit.cover,
-  ),)
-  ),
-  Container(
-  height: 200,
-  width: 150,
-  child: Column(
-  children: [
-  Row(
-  children: [
-  Container(
-  margin: EdgeInsets.only(left: 8, top: 8),
-  padding:
-  EdgeInsets.symmetric(vertical: 6, horizontal: 8),
-  decoration: BoxDecoration(
-  borderRadius: BorderRadius.circular(8),
-  color: Colors.white38),
-  child: Text(
-  label ?? "New",
-  style: TextStyle(color: Colors.white),
-  ))
-  ],
-  ),
-  Spacer(),
-  Row(
-  children: [
-  Container(
-  margin: EdgeInsets.only(bottom: 10, left: 8, right: 8),
-  child: Column(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-  Container(
-  child: Text(
-  "Thailand",
-  style: TextStyle(
-  color: Colors.white,
-  fontWeight: FontWeight.w600,
-  fontSize: 16),
-  ),
-  ),
-  SizedBox(
-  height: 3,
-  ),
-  Text(
-  "18 Tours",
-  style: TextStyle(
-  color: Colors.white,
-  fontWeight: FontWeight.w600,
-  fontSize: 13),
-  )
-  ],
-  ),
-  ),
-  Spacer(),
-  Container(
-  margin: EdgeInsets.only(bottom: 10, right: 8),
-  padding:
-  EdgeInsets.symmetric(horizontal: 3, vertical: 7),
-  decoration: BoxDecoration(
-  borderRadius: BorderRadius.circular(3),
-  color: Colors.white38),
-  child: Column(
-  children: [
-  Text(
-  "4.5",
-  style: TextStyle(
-  color: Colors.white,
-  fontWeight: FontWeight.w600,
-  fontSize: 13),
-  ),
-  SizedBox(
-  height: 2,
-  ),
-  Icon(
-  Icons.star,
-  color: Colors.white,
-  size: 20,
-  )
-  ],
-  ))
-  ],
-  )
-  ],
-  ),
-  )
-  ],
-  ),
-  );
-  }
-  }*/
-
+    return Container(
+      margin: EdgeInsets.only(right: 8),
+      child: Stack(
+        children: [
+          ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+                  child: CachedNetworkImage(
+                  image: imgUrl,
+                  height: 220,
+                  width: 150,
+                  fit: BoxFit.cover,
+                )
+          ),
+          Container(
+            height: 200,
+            width: 150,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                        margin: EdgeInsets.only(left: 8, top: 8),
+                        padding:
+                        EdgeInsets.symmetric(vertical: 6, horizontal: 8),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.white38),
+                        child: Text(
+                          label ?? "New",
+                          style: TextStyle(color: Colors.white),
+                        ))
+                  ],
+                ),
+                Spacer(),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(bottom: 10, left: 8, right: 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            child: Text(
+                              "Thailand",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            "18 Tours",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 13),
+                          )
+                        ],
+                      ),
+                    ),
+                    Spacer(),
+                    Container(
+                        margin: EdgeInsets.only(bottom: 10, right: 8),
+                        padding:
+                        EdgeInsets.symmetric(horizontal: 3, vertical: 7),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(3),
+                            color: Colors.white38),
+                        child: Column(
+                          children: [
+                            Text(
+                              "4.5",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 13),
+                            ),
+                            SizedBox(
+                              height: 2,
+                            ),
+                            Icon(
+                              Icons.star,
+                              color: Colors.white,
+                              size: 20,
+                            )
+                          ],
+                        ))
+                  ],
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
