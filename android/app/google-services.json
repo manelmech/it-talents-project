@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987032246485",
+    "project_id": "fifth-moment-313312",
+    "storage_bucket": "fifth-moment-313312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987032246485:android:083176a67f21516f352a5c",
+        "android_client_info": {
+          "package_name": "com.example.ittalentsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987032246485-pcpp23iusad71aivnpvtofvhdboqiqc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe7XS8K_oklL1BudBlvt0ppvHY3fJDydY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987032246485-pcpp23iusad71aivnpvtofvhdboqiqc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
